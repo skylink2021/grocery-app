@@ -1,0 +1,81 @@
+/*------onsale product-----*/
+.title-box
+{
+    background: #009900;
+    color: #fff;
+    width: 180px;
+    padding: 4px 10px;
+    height: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+}
+.title-box h2
+{
+    font-size: 24px;
+}
+.title-box::after
+{
+    content: '';
+    border-top: 40px solid #009900;
+    border-right: 50px solid transparent; 
+    position: absolute;
+    display: flex;
+    margin-top: -4px;
+    margin-left: 170px;
+}
+/*----product-top css----*/
+.product-top img
+{
+    width: 100%;
+}
+.overlay-right
+{
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 10%;
+    margin-left: 0;
+    width: 70px;
+}
+.overlay-right .fa
+{
+    cursor: pointer;
+    background: #009900;
+    color: #fff;
+    height: 35px;
+    width: 35px;
+    font-size: 20px;
+    padding: 7px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.overlay-right .btn-secondary
+{
+    background: none !important;
+    border: none !important;
+    box-shadow: none!important;
+}
+.product-top:hover .overlay-right
+{
+    opacity: 1;
+    margin-left: 5%;
+    transition: 0.5s;
+}
+/*-------product-bottom css--------*/
+.product-bottom .fa
+{
+    color: #009900;
+    font-size: 20px;
+    margin-top: 5px;
+}
+.product-bottom h3
+{
+    font-size: 20px;
+    font-weight: blod;
+}
+.product-bottom h5
+{
+    font-size: 15px;
+    padding-bottom: 10px;
+}

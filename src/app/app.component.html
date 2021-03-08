@@ -1,0 +1,52 @@
+<!------top-nav-bar-------->
+<div class="top-nav-bar">
+    <div class="search-box">
+      <i class="fa fa-bars" aria-hidden="true" id="menu-btn"></i>
+      <i class="fa fa-times" aria-hidden="true" id="close-btn"  ></i>
+       <a href="#"> 
+     <img [src]="url" class="logo"></a>
+        <input type="text" class="form-control">
+        <span class="input-group-text">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </span>
+        <img [src]="flag" class="logo">
+    </div>
+    <div class="menu-bar">
+        <ul>
+            <li><a routerLink="/cart"><i class="fa fa-shopping-basket" aria-hidden="true"></i>cart</a></li>
+            <li><a routerLink="/signup" >sign up</a></li>
+            <li><a routerLink ="/login">log in</a></li>
+        </ul>
+    </div>
+</div>
+<!-------side-bar-------->
+<div class="side-menu" id="side-menu">
+    <header>SHOP BY CATEGORY</header>
+    <ul>
+      <li><a href="#">Vegetables</a></li>
+      <li><a href="#">Fruits</a></li>
+      <li><a href="#">Grains</a></li>
+      <li><a href="#">Oil & Masala</a>
+      <li><a href="#">Dairyhub & Backery</a></li>
+      <li><a href="#">Non-Veg</a></li>
+      <li><a href="#">Snacks & Namkin</a></li>            
+      <li><a href="#">Kitchen Heart</a></li>
+      <li><a href="#">Help & Settings</a></li>
+      <li><a href="#">Log In</a></li>
+      <li><a href="#">Abouts</a></li>  
+    </ul>
+  </div>
+<!-----second top-nav-bar------->
+  <div class="tab">
+    <button class="tablinks" ><i class="fa fa-shopping-basket"></i>Deliver to Birgunj</button>
+    <button class="tablinks" >Our Services</button>
+    <a href="#">
+    <button class="tablinks" >Sell your Product</button>
+    </a>
+  </div>
+  
+  
+<router-outlet></router-outlet>
+<app-slider></app-slider>
+<app-product></app-product>
+<app-footer></app-footer>

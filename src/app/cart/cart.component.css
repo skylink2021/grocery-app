@@ -1,0 +1,95 @@
+/*------card iteam details--------*/
+.cart-page{
+    margin: 60px auto;  
+}
+table
+{
+    margin-left: 10%;
+    width: 80%;
+    border-collapse: collapse; 
+}
+.cart-info
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+th
+{
+    text-align: left;
+    padding: 10px;
+
+    color: #fff;
+    background: #009900;
+    font-weight: normal;
+}
+td{
+    padding: 10px 5px;
+}
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+td a{
+    color: #009900;
+    font-size: 12px;
+}
+td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+.total-price
+{
+    display: flex;
+    justify-content: flex-end;
+}
+.total-price table
+{
+    border-top: 3px solid #009900;
+    width: 80%;
+    max-width: 500px;
+    margin-right: 10%;
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
+
+.big-text
+{
+    font-size: 52px;
+    margin: 20px 0;
+    color: #009900;
+}
+a.btn
+{
+    margin: 30px 10px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 20px;
+}a.btn-first
+{
+    background-color: #009900;
+    color: #fff;
+}
+a.btn-second
+{
+    background: transparent;
+    border:1px solid #009900;
+    color: #333;
+}
+a.btn:hover
+{
+    background: #009900;
+    border: none;
+    color: #fff;
+    box-shadow: 5px 5px 10px;
+    transition: 0.3s;
+}
+.banner-info, .banner-image
+{
+    margin: 50px 0;
+}

@@ -1,0 +1,262 @@
+body
+{
+    background-color: #f1f3f4;
+    font-family: sans-serif;
+}
+.top-nav-bar
+{
+    height: 57px;
+    top: 0px;
+    position: sticky;
+    background: #ffff;
+    margin-bottom: 0px;
+    border-bottom: 3px solid #009900 ;
+    z-index: 2;
+}
+
+.top-nav-bar h3
+{
+    padding-top: 10px;
+    font-weight: bold;
+}
+.top-nav-bar span
+{
+  color: #009900;
+}
+.logo
+{
+    height: 40px;
+    margin: 5px 10px;
+}
+.form-control
+{
+    margin-top: 9px;
+    margin-left: 50px;
+    border: 1.5px solid #009900  !important;
+    border-top-left-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    box-shadow: none !important;
+}
+.input-group-text
+{
+    background: #009900 !important;
+    border: 1px solid #009900 !important;
+    margin: 8.5px 10px 10.5px 0px !important;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    border-top-right-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+    cursor: pointer;
+}
+.search-box
+{
+    display: inline-flex;
+    width: 60%;
+}
+.fa-search
+{
+    color: #ffff;
+}
+.menu-bar
+{
+    width: 40%;
+    height: 57px;
+    float: right;
+}
+.menu-bar ul
+{
+    display:  inline-flex;
+    float: right;
+}
+.menu-bar ul li
+{
+    border-left: 1px solid #ffff;
+    list-style-type: none;
+    padding: 15px 35px;
+    text-align: center;
+    background-color: #009900 ;
+    cursor: pointer;
+}
+.menu-bar ul li a
+{
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+.fa-shopping-basket
+{
+    margin-right: 5px;
+}
+
+@media only screen and (max-width: 980px)
+{
+    .top-nav-bar
+    {
+        height: 118px;
+        border-bottom: 0;
+        margin-bottom: 5px;
+    }
+    .search-box
+    {
+        width: 100%;
+    }
+    .menu-bar
+    {
+        width: 100%;
+    }
+    .menu-bar ul
+    {
+        margin: 10px 0;
+        width: 100%;
+    }
+    .menu-bar ul li
+    {
+        height: 57px;
+        width: 100%;
+    }
+}
+/* second tab*/
+.tab
+{
+    overflow: hidden;
+    border: 1px solid #ffff;
+    background-color: #f1f3f4;
+}
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 8px 20px;
+    transition: 0.3s;
+    font-size: 15px;
+    font-weight: bold;
+}
+.tab button:hover {
+    background-color: #009900;
+    color: #ffff;
+    font-weight: bold;
+}
+@media only screen and (max-width: 980px)
+{
+   .top
+    {
+        height: 100px;
+    } 
+    .tab button
+    {
+        padding: 5px 10px
+    }
+}
+/*-------sdiemenu--------*/
+.side-menu
+{
+    height: 650px;
+    width: 300px;
+    font-size: 14px;
+    float: left;
+    z-index: 20;
+    background: #ddd;
+    overflow-x: hidden;
+    position: fixed;
+    display: none;
+}
+.side-menu header 
+{
+  font-weight: bold;
+  font-size: 22px;
+  color: white;
+  line-height: 57px;
+  text-align: center;
+  background: #009900;
+  user-select: none;
+}
+
+.side-menu ul li 
+{
+    list-style-type: none;
+    font-weight: bold;
+    margin-top: 2px;
+    cursor: pointer;
+}
+.side-menu ul a
+{
+    background: #006600;
+    display: block;
+    height: 75%;
+    width: 100%;
+    line-height: 50px;
+    font-size: 20px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 0px solid rgba(255,255,255,.1);
+    transition: .5s;
+}
+
+
+
+#menu-btn,#close-btn
+{
+    font-size: 30px;
+    margin: 10px;
+    color: #ffff;
+    display: none;
+    background: #009900;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+#menu-btn
+{
+    display: block;
+    padding: 4px 9px;
+    transition: all .5s;
+}
+#close-btn
+{
+  z-index: 1111;
+  left: -195px;
+  top: 17px;
+  font-size: 30px;
+  padding: 4px 9px;
+  transition: all .5s ease;
+
+}
+@media only screen and (max-width:980px)
+{
+    .side-menu
+    {
+        width: 50%;
+        z-index: 20;
+        top: 68px;
+        position: fixed;
+        font-size: 12px;
+        display: none;
+    }
+    .side-menu header 
+{
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  line-height: 45px;
+  text-align: center;
+  background: #009900;
+  user-select: none;
+}
+    .side-menu ul li ul
+    {
+        top: 1330x;
+    }
+    .side-menu ul li:hover ul
+    {
+        margin-left: 1%;
+    }
+    #menu-btn
+    {
+        display: block;
+    }
+}
